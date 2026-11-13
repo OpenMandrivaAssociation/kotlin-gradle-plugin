@@ -55,6 +55,7 @@ BuildRequires:	mvn(org.bouncycastle:bcprov-jdk18on)
 BuildRequires:	mvn(org.bouncycastle:bcutil-jdk18on)
 BuildRequires:	mvn(org.apache.commons:commons-compress)
 BuildRequires:	mvn(org.slf4j:slf4j-api)
+# gradle ships gradle-tooling-api-8.11.1.jar and does not Provide mvn(org.gradle:gradle-tooling-api).
 Requires:	gradle = 8.11.1
 Requires:	mvn(org.jetbrains.kotlin:kotlin-stdlib) = 2.4.21
 Requires:	mvn(org.jetbrains.kotlin:kotlin-reflect) = 2.4.21
@@ -143,11 +144,6 @@ cat > kotlin-gradle-plugin.pom << END
       <groupId>org.jetbrains.kotlin</groupId>
       <artifactId>kotlin-compiler-embeddable</artifactId>
       <version>%{version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.gradle</groupId>
-      <artifactId>gradle-tooling-api</artifactId>
-      <version>8.11.1</version>
     </dependency>
   </dependencies>
 </project>
