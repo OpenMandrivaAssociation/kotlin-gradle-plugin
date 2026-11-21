@@ -1,6 +1,6 @@
 Name:		kotlin-gradle-plugin
 Version:	2.4.21
-Release:	1
+Release:	2
 Summary:	Kotlin Gradle plugin
 Group:		Development/Java
 License:	Apache-2.0
@@ -41,8 +41,8 @@ BuildRequires:	mvn(org.jetbrains.kotlin:kotlin-tooling-core) = 2.4.21
 BuildRequires:	mvn(org.jetbrains.kotlin:kotlin-metadata-jvm) = 2.4.21
 BuildRequires:	mvn(org.jetbrains.kotlin:kotlin-time-instant) = 2.4.21
 BuildRequires:	mvn(org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm) = 1.10.2
-BuildRequires:	mvn(org.jetbrains.kotlinx:kotlinx-serialization-core) = 1.11.0
-BuildRequires:	mvn(org.jetbrains.kotlinx:kotlinx-serialization-json) = 1.11.0
+BuildRequires:	mvn(org.jetbrains.kotlinx:kotlinx-serialization-core) = 1.13.0
+BuildRequires:	mvn(org.jetbrains.kotlinx:kotlinx-serialization-json) = 1.13.0
 BuildRequires:	mvn(com.android.tools.build:gradle-api) = 9.0.0
 BuildRequires:	mvn(com.google.code.gson:gson)
 BuildRequires:	mvn(com.google.guava:guava)
@@ -74,8 +74,8 @@ Requires:	mvn(org.jetbrains.kotlin:kotlin-tooling-core) = 2.4.21
 Requires:	mvn(org.jetbrains.kotlin:kotlin-metadata-jvm) = 2.4.21
 Requires:	mvn(org.jetbrains.kotlin:kotlin-time-instant) = 2.4.21
 Requires:	mvn(org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm) = 1.10.2
-Requires:	mvn(org.jetbrains.kotlinx:kotlinx-serialization-core) = 1.11.0
-Requires:	mvn(org.jetbrains.kotlinx:kotlinx-serialization-json) = 1.11.0
+Requires:	mvn(org.jetbrains.kotlinx:kotlinx-serialization-core) = 1.13.0
+Requires:	mvn(org.jetbrains.kotlinx:kotlinx-serialization-json) = 1.13.0
 Requires:	mvn(org.antlr:antlr4-runtime)
 Requires:	mvn(com.google.code.gson:gson)
 Requires:	mvn(com.google.guava:guava)
