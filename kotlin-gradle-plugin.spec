@@ -56,7 +56,10 @@ BuildRequires:	mvn(org.bouncycastle:bcutil-jdk18on)
 BuildRequires:	mvn(org.apache.commons:commons-compress)
 BuildRequires:	mvn(org.slf4j:slf4j-api)
 # gradle ships gradle-tooling-api-8.11.1.jar and does not Provide mvn(org.gradle:gradle-tooling-api).
-Requires:	gradle = 8.11.1
+# Build against gradle-bootstrap (gradle = 8.11.1). At runtime Gradle 9
+# satisfies this too, so dokka can compile against the Gradle 9 jars
+# without pulling bootstrap in next to them.
+Requires:	gradle >= 8.11.1
 Requires:	mvn(org.jetbrains.kotlin:kotlin-stdlib) = 2.4.21
 Requires:	mvn(org.jetbrains.kotlin:kotlin-reflect) = 2.4.21
 Requires:	mvn(org.jetbrains.kotlin:kotlin-script-runtime) = 2.4.21
